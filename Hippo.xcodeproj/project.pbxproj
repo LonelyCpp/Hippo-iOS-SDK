@@ -434,6 +434,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1806C04B263BBE5F00A0A965 /* Hippo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hippo-Bridging-Header.h"; sourceTree = "<group>"; };
 		192D0AA425F68FA90065C828 /* CreateTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketViewModel.swift; sourceTree = "<group>"; };
 		192D0AA825F68FBF0065C828 /* CreateTicketAttachmentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTicketAttachmentHelper.swift; sourceTree = "<group>"; };
 		1964B42C25F623B200DC2D6F /* UrlTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlTableCell.swift; sourceTree = "<group>"; };
@@ -1620,6 +1621,7 @@
 				C9B77E0A21A01B060092848D /* Info.plist */,
 				C9B77E0C21A01B060092848D /* Montserrat-SemiBold.otf */,
 				D8F6D0A3241941D400B168C5 /* Hippo.h */,
+				1806C04B263BBE5F00A0A965 /* Hippo-Bridging-Header.h */,
 			);
 			path = Hippo;
 			sourceTree = "<group>";
@@ -3279,6 +3281,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -3353,7 +3356,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hippo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -3377,7 +3380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hippo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
